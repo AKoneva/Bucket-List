@@ -11,6 +11,9 @@
 		04918C7C2ACC514200681DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C7B2ACC514200681DF4 /* ContentView.swift */; };
 		04918C7E2ACC514400681DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04918C7D2ACC514400681DF4 /* Assets.xcassets */; };
 		04918C812ACC514400681DF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04918C802ACC514400681DF4 /* Preview Assets.xcassets */; };
+		04918C892ACC556500681DF4 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C882ACC556500681DF4 /* FileManager.swift */; };
+		04918C8E2ACC63F300681DF4 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C8D2ACC63F300681DF4 /* LocationModel.swift */; };
+		04918C912ACC69AD00681DF4 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C902ACC69AD00681DF4 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		04918C7B2ACC514200681DF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04918C7D2ACC514400681DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04918C802ACC514400681DF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04918C882ACC556500681DF4 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		04918C8D2ACC63F300681DF4 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		04918C902ACC69AD00681DF4 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,11 @@
 		04918C782ACC514200681DF4 /* Bucket List */ = {
 			isa = PBXGroup;
 			children = (
-				04918C792ACC514200681DF4 /* Bucket_ListApp.swift */,
-				04918C7B2ACC514200681DF4 /* ContentView.swift */,
-				04918C7D2ACC514400681DF4 /* Assets.xcassets */,
+				04918C8A2ACC63CC00681DF4 /* App */,
+				04918C8B2ACC63D300681DF4 /* View */,
+				04918C8C2ACC63E500681DF4 /* Model */,
+				04918C8F2ACC640300681DF4 /* Resource */,
+				04918C872ACC555700681DF4 /* Manager */,
 				04918C7F2ACC514400681DF4 /* Preview Content */,
 			);
 			path = "Bucket List";
@@ -65,6 +73,47 @@
 				04918C802ACC514400681DF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04918C872ACC555700681DF4 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04918C882ACC556500681DF4 /* FileManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		04918C8A2ACC63CC00681DF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04918C792ACC514200681DF4 /* Bucket_ListApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04918C8B2ACC63D300681DF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04918C7B2ACC514200681DF4 /* ContentView.swift */,
+				04918C902ACC69AD00681DF4 /* EditView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04918C8C2ACC63E500681DF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04918C8D2ACC63F300681DF4 /* LocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04918C8F2ACC640300681DF4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				04918C7D2ACC514400681DF4 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04918C8E2ACC63F300681DF4 /* LocationModel.swift in Sources */,
+				04918C912ACC69AD00681DF4 /* EditView.swift in Sources */,
+				04918C892ACC556500681DF4 /* FileManager.swift in Sources */,
 				04918C7C2ACC514200681DF4 /* ContentView.swift in Sources */,
 				04918C7A2ACC514200681DF4 /* Bucket_ListApp.swift in Sources */,
 			);
@@ -275,11 +327,13 @@
 				DEVELOPMENT_TEAM = J2C6GVHVQ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +358,13 @@
 				DEVELOPMENT_TEAM = J2C6GVHVQ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
