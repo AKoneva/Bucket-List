@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		046B7B6D2ACD0E6900031AFB /* WikipediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B6C2ACD0E6800031AFB /* WikipediaModel.swift */; };
+		046B7B702ACD10F000031AFB /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B6F2ACD10F000031AFB /* ContentView-ViewModel.swift */; };
 		04918C7A2ACC514200681DF4 /* Bucket_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C792ACC514200681DF4 /* Bucket_ListApp.swift */; };
 		04918C7C2ACC514200681DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C7B2ACC514200681DF4 /* ContentView.swift */; };
 		04918C7E2ACC514400681DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04918C7D2ACC514400681DF4 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		046B7B6C2ACD0E6800031AFB /* WikipediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaModel.swift; sourceTree = "<group>"; };
+		046B7B6F2ACD10F000031AFB /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		04918C762ACC514200681DF4 /* Bucket List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bucket List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04918C792ACC514200681DF4 /* Bucket_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket_ListApp.swift; sourceTree = "<group>"; };
 		04918C7B2ACC514200681DF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046B7B6E2ACD10DC00031AFB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				046B7B6F2ACD10F000031AFB /* ContentView-ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		04918C6D2ACC514200681DF4 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		04918C782ACC514200681DF4 /* Bucket List */ = {
 			isa = PBXGroup;
 			children = (
+				046B7B6E2ACD10DC00031AFB /* ViewModels */,
 				04918C8A2ACC63CC00681DF4 /* App */,
 				04918C8B2ACC63D300681DF4 /* View */,
 				04918C8C2ACC63E500681DF4 /* Model */,
@@ -194,6 +205,7 @@
 				04918C892ACC556500681DF4 /* FileManager.swift in Sources */,
 				046B7B6D2ACD0E6900031AFB /* WikipediaModel.swift in Sources */,
 				04918C7C2ACC514200681DF4 /* ContentView.swift in Sources */,
+				046B7B702ACD10F000031AFB /* ContentView-ViewModel.swift in Sources */,
 				04918C7A2ACC514200681DF4 /* Bucket_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
