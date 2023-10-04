@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046B7B6D2ACD0E6900031AFB /* WikipediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B6C2ACD0E6800031AFB /* WikipediaModel.swift */; };
 		04918C7A2ACC514200681DF4 /* Bucket_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C792ACC514200681DF4 /* Bucket_ListApp.swift */; };
 		04918C7C2ACC514200681DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C7B2ACC514200681DF4 /* ContentView.swift */; };
 		04918C7E2ACC514400681DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04918C7D2ACC514400681DF4 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046B7B6C2ACD0E6800031AFB /* WikipediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaModel.swift; sourceTree = "<group>"; };
 		04918C762ACC514200681DF4 /* Bucket List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bucket List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04918C792ACC514200681DF4 /* Bucket_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket_ListApp.swift; sourceTree = "<group>"; };
 		04918C7B2ACC514200681DF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				04918C8D2ACC63F300681DF4 /* LocationModel.swift */,
+				046B7B6C2ACD0E6800031AFB /* WikipediaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				04918C8E2ACC63F300681DF4 /* LocationModel.swift in Sources */,
 				04918C912ACC69AD00681DF4 /* EditView.swift in Sources */,
 				04918C892ACC556500681DF4 /* FileManager.swift in Sources */,
+				046B7B6D2ACD0E6900031AFB /* WikipediaModel.swift in Sources */,
 				04918C7C2ACC514200681DF4 /* ContentView.swift in Sources */,
 				04918C7A2ACC514200681DF4 /* Bucket_ListApp.swift in Sources */,
 			);
