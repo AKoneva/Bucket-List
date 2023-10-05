@@ -36,7 +36,7 @@ struct TitledTextField: View {
             } else {
                 TextEditor(text: $text)
                     .padding()
-                    .frame(height: 150)
+                    .frame(height: 100)
                     .background(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(.secondary, lineWidth: 0.3)
@@ -49,7 +49,7 @@ struct TitledTextField: View {
                             .font(.footnote)
                             .bold()
                             .foregroundStyle(.secondary)
-                            .offset(x: 20, y: -75)
+                            .offset(x: 20, y: -50)
                             .transition(.slide)
                     }
                 }
@@ -62,5 +62,5 @@ struct TitledTextField: View {
 }
 
 #Preview {
-    TitledTextField(placeholder: "placeholder", text: .constant("hgf"), isTextField: false)
+    TitledTextField(placeholder: "placeholder", text: .constant("hgcvcvcvcvcvcvcvcvcvjvkcvhbjfhgsjdhgfjshdgfjsdgfjshdgfsjhgfjshdkfksjdfhksdhfkf"), isTextField: false)
 }

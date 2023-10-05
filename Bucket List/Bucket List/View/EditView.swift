@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct EditView: View {
     @Environment(\.dismiss) var dismiss
+    @StateObject private var viewModel: ViewModel
+    @State private var lookAroundScene: MKLookAroundScene?
+    
     var onSave: (Location) -> Void
     
-    @StateObject private var viewModel: ViewModel
     
     init(location: Location, onSave: @escaping (Location) -> Void) {
         self.onSave = onSave
@@ -24,6 +27,15 @@ struct EditView: View {
             VStack {
                 TitledTextField(placeholder: "Name", text: $viewModel.name, isTextField: true)
                 TitledTextField(placeholder: "Description", text: $viewModel.description, isTextField: false)
+                
+                if let scene = lookAroundScene {
+                    LookAroundPreview(initialScene: scene)
+                        .frame(height: 150)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .padding()
+                } else {
+                    ContentUnavailableView("No preview avaliable", systemImage: "eye.slash")
+                }
                 
                 HStack {
                     Text("Nearby…")
@@ -66,6 +78,9 @@ struct EditView: View {
             }
             .task {
                 await viewModel.fetchNearbyPlaces()
+                
+                let request = MKLookAroundSceneRequest(coordinate: viewModel.location.coordinate)
+                lookAroundScene = try? await request.scene
             }
         }
     }
