@@ -26,6 +26,8 @@ struct Page: Codable, Comparable {
     static func <(lhs: Page, rhs: Page) -> Bool {
         lhs.title < rhs.title
     }
+    
+    static let example = Page(pageid: 1, title: "Title", terms: ["description": ["description"]])
 }
 
 enum LoadingState {

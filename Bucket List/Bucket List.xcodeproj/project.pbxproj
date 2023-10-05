@@ -11,7 +11,8 @@
 		046B7B702ACD10F000031AFB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B6F2ACD10F000031AFB /* HomeViewModel.swift */; };
 		046B7B762ACD40B900031AFB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B752ACD40B900031AFB /* MapView.swift */; };
 		046B7B782ACD40DC00031AFB /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B772ACD40DC00031AFB /* MapViewModel.swift */; };
-		046B7B7A2ACD5A0600031AFB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B792ACD5A0600031AFB /* LocationManager.swift */; };
+		046B7B7C2ACEA1C300031AFB /* EditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B7B2ACEA1C300031AFB /* EditViewModel.swift */; };
+		046B7B7F2ACEAE0C00031AFB /* TitledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B7B7E2ACEAE0C00031AFB /* TitledTextField.swift */; };
 		04918C7A2ACC514200681DF4 /* Bucket_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C792ACC514200681DF4 /* Bucket_ListApp.swift */; };
 		04918C7C2ACC514200681DF4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04918C7B2ACC514200681DF4 /* HomeView.swift */; };
 		04918C7E2ACC514400681DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04918C7D2ACC514400681DF4 /* Assets.xcassets */; };
@@ -26,7 +27,8 @@
 		046B7B6F2ACD10F000031AFB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		046B7B752ACD40B900031AFB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		046B7B772ACD40DC00031AFB /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		046B7B792ACD5A0600031AFB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		046B7B7B2ACEA1C300031AFB /* EditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewModel.swift; sourceTree = "<group>"; };
+		046B7B7E2ACEAE0C00031AFB /* TitledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitledTextField.swift; sourceTree = "<group>"; };
 		04918C762ACC514200681DF4 /* Bucket List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bucket List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04918C792ACC514200681DF4 /* Bucket_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket_ListApp.swift; sourceTree = "<group>"; };
 		04918C7B2ACC514200681DF4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -53,8 +55,17 @@
 			children = (
 				046B7B6F2ACD10F000031AFB /* HomeViewModel.swift */,
 				046B7B772ACD40DC00031AFB /* MapViewModel.swift */,
+				046B7B7B2ACEA1C300031AFB /* EditViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		046B7B7D2ACEADF000031AFB /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				046B7B7E2ACEAE0C00031AFB /* TitledTextField.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		04918C6D2ACC514200681DF4 = {
@@ -99,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				04918C882ACC556500681DF4 /* FileManager.swift */,
-				046B7B792ACD5A0600031AFB /* LocationManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -115,6 +125,7 @@
 		04918C8B2ACC63D300681DF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				046B7B7D2ACEADF000031AFB /* CustomViews */,
 				04918C7B2ACC514200681DF4 /* HomeView.swift */,
 				04918C902ACC69AD00681DF4 /* EditView.swift */,
 				046B7B752ACD40B900031AFB /* MapView.swift */,
@@ -211,12 +222,13 @@
 			files = (
 				04918C8E2ACC63F300681DF4 /* LocationModel.swift in Sources */,
 				046B7B762ACD40B900031AFB /* MapView.swift in Sources */,
-				046B7B7A2ACD5A0600031AFB /* LocationManager.swift in Sources */,
+				046B7B7F2ACEAE0C00031AFB /* TitledTextField.swift in Sources */,
 				04918C912ACC69AD00681DF4 /* EditView.swift in Sources */,
 				04918C892ACC556500681DF4 /* FileManager.swift in Sources */,
 				046B7B6D2ACD0E6900031AFB /* WikipediaModel.swift in Sources */,
 				04918C7C2ACC514200681DF4 /* HomeView.swift in Sources */,
 				046B7B702ACD10F000031AFB /* HomeViewModel.swift in Sources */,
+				046B7B7C2ACEA1C300031AFB /* EditViewModel.swift in Sources */,
 				04918C7A2ACC514200681DF4 /* Bucket_ListApp.swift in Sources */,
 				046B7B782ACD40DC00031AFB /* MapViewModel.swift in Sources */,
 			);
