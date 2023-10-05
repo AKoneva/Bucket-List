@@ -10,15 +10,15 @@ import MapKit
 import _MapKit_SwiftUI
 
 extension MapView {
-   @MainActor class ViewModel: ObservableObject {
-        @Published var manager = LocationManager()
+    @MainActor class ViewModel: ObservableObject {
         @Published private(set) var locations: [Location]
         @Published var selectedPlace: Location?
-        @Published var cameraPosition: MapCameraPosition = .automatic
-
+        @Published var cameraPosition: MapCameraPosition = .userLocation(followsHeading: false, fallback: .automatic)
+      
+        
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         
-         init() {
+        init() {
             do {
                 let data = try Data(contentsOf: savePath)
                 locations = try JSONDecoder().decode([Location].self, from: data)
@@ -26,7 +26,7 @@ extension MapView {
                 locations = []
             }
         }
-       
+        
         func addLocation(coordinates: CLLocationCoordinate2D) {
             let newLocation = Location(id: UUID(), name: "New location", description: "", latitude: coordinates.latitude, longitude: coordinates.longitude)
             locations.append(newLocation)
