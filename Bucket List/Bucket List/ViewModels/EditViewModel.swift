@@ -12,7 +12,7 @@ extension EditView {
         @Published var location: Location
         @Published  var name: String 
         @Published  var description: String
-        @Published  var loadingState = LoadingState.loaded
+        @Published  var loadingState = LoadingState.loading
         @Published  var pages = [Page.example]
     
         init(location: Location) {

@@ -10,7 +10,7 @@ import LocalAuthentication
 
 extension HomeView {
     @MainActor class ViewModel: ObservableObject {
-        @Published var isUnlocked = true
+        @Published var isUnlocked = false
         
         func authenticate() {
             let context = LAContext()
