@@ -86,7 +86,7 @@ struct MapView: View {
                         }
                     }
                     .padding()
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.primary)
                     .background(.thinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     
@@ -97,7 +97,7 @@ struct MapView: View {
                         Image(systemName: "plus")
                     }
                     .padding()
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.primary)
                     .background(.thinMaterial)
                     .font(.title)
                     .clipShape(Circle())

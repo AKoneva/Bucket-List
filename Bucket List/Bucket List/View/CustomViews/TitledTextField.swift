@@ -9,8 +9,11 @@ import SwiftUI
 
 struct TitledTextField: View {
     let placeholder: String
+    
     @Binding var text: String
+    
     let isTextField: Bool
+
     
     var body: some View {
         ZStack(alignment: .leading) {
@@ -25,7 +28,7 @@ struct TitledTextField: View {
                     withAnimation(.easeInOut(duration: 0.5)) {
                         Text(placeholder)
                             .padding(.horizontal)
-                            .background(.white)
+                            .background(Color(.systemBackground))
                             .font(.footnote)
                             .bold()
                             .foregroundStyle(.secondary)
@@ -45,7 +48,7 @@ struct TitledTextField: View {
                     withAnimation(.easeInOut(duration: 0.2)) {
                         Text(placeholder)
                             .padding(.horizontal)
-                            .background(.white)
+                            .background(Color(.systemBackground))
                             .font(.footnote)
                             .bold()
                             .foregroundStyle(.secondary)
@@ -58,7 +61,6 @@ struct TitledTextField: View {
         }
         .padding()
     }
-    
 }
 
 #Preview {
